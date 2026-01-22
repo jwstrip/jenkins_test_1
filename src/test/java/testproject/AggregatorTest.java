@@ -27,4 +27,14 @@ public class AggregatorTest {
         agr.addValue(val);
         assertThat(agr.getSum()).isEqualTo(val * 2);
     }
+
+    @Test
+    public void testResetion(){
+        Aggregator arg = new Aggregator();
+        double val =15;
+        arg.addValue(val);
+        arg.addValue(val);
+        arg.reset();
+        assertThat(arg.getSum()).isZero();
+    }
 }
