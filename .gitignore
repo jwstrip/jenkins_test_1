@@ -2,3 +2,5 @@
 build/
 .gradle/
 .idea/
+jenkins_test_1/
+origin/
